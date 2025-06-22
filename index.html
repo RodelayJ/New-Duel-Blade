@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blade Duel: Full Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Blade Duel: Mythic Adventure</h1>
+  <div id="game-ui">
+    <div id="player-stats"></div>
+    <div id="inventory-ui"></div>
+    <div id="enemy-display">
+      <img src="assets/images/enemy_chibi.png" id="enemy-img" />
+    </div>
+    <div id="combat-ui">
+      <button onclick="attack()">Attack</button>
+      <button onclick="useSkill()">Skill</button>
+      <button onclick="usePotion()">Potion</button>
+    </div>
+    <div id="dungeon-log"></div>
+  </div>
+  <audio id="bg-music" src="assets/audio/dungeon_theme.mp3" autoplay loop></audio>
+  <script src="main.js"></script>
+  <script src="combat.js"></script>
+  <script src="inventory.js"></script>
+  <script src="potions.js"></script>
+  <script src="dungeon.js"></script>
+  <script src="audio.js"></script>
+</body>
+</html>
